@@ -80,17 +80,17 @@ body {
 }
 
 #result-section .design-images .cute-pic {
-    width: 150px; /* Adjust the width to make the cute pics larger */
+    width: 200px;
     height: auto;
     position: absolute;
-    top: 20px; /* Adjust the top position to move the cute pics higher */
+    top: 50%;
     transform: translateY(-50%);
 }
 
 #result-section .design-images .cute-pic:first-child {
-    left: calc(50% - 250px); /* Adjust the position of the first cute pic */
+    left: calc(50% - 200px - 75px); /* Adjust the position of the first cute pic */
 }
 
 #result-section .design-images .cute-pic:last-child {
-    right: calc(50% - 250px); /* Adjust the position of the second cute pic */
+    right: calc(50% - 200px - 75px); /* Adjust the position of the second cute pic */
 }
