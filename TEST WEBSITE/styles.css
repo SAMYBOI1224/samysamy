@@ -39,6 +39,8 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 10px;
+    display: block; /* Ensure the image is displayed properly */
+    margin-bottom: 10px; /* Add some spacing below the image */
 }
 
 .flower-button p {
@@ -62,19 +64,14 @@ body {
 
 .design-images {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.design-images img {
+.design-images .cute-pic {
     width: 100px;
     height: auto;
-    margin: 10px;
-}
-
-.cute-pic {
-    width: 100px;
-    height: auto;
-    margin: 10px;
 }
