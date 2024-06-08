@@ -36,5 +36,3 @@ function selectEmotion(emotion) {
     // Change the displayed image based on the selected flower
     document.getElementById('selected-flower').src = flowerImagesNew[selectedFlower];
 }
-
-// Add your additional functions here...
