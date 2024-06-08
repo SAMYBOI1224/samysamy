@@ -4,6 +4,10 @@ function selectFlower(flower) {
     selectedFlower = flower;
     document.querySelector('.flower-selection').style.display = 'none';
     document.getElementById('emotion-section').style.display = 'block';
+
+    // Set the src attribute of the result image based on the selected flower
+    const resultImage = document.getElementById('selected-flower');
+    resultImage.src = `images/${flower}-result.jpg`;
 }
 
 function selectEmotion(emotion) {
