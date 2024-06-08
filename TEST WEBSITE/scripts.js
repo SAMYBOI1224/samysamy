@@ -14,33 +14,25 @@ function selectEmotion(emotion) {
     };
     
     const quotes = {
-        angry: [
-            "kanino ka galet sasakalen naten",
-            "Yaan mo sila di natin sila bati",
-            "Sumbong mo saken yari yan"
-        ],
-        sad: [
-            "ICE CREAM IS KEY",
-            "wawaaa ulit AHAHAH",
-            "Read??"
-        ],
-        lonely: [
-            "Binge watch>>",
-            "ihh wawaa",
-            "Talk to someone??"
-        ],
-        happy: [
-            "Keep on Smilin : ) ",
-            "yieeeeee",
-            "luh happyy"
-        ]
+        angry: ['Kanino ka galit? Sasakalin natin sila!', 'Yaan mo sila, di natin sila bati.', 'Sumbong mo saken, yari yan.'],
+        sad: ['Ice cream is key.', 'Wawawa ulit. AHAHAH', 'Read?'],
+        lonely: ['Binge watch >>', 'Ihh wawawa', 'Talk to someone??'],
+        happy: ['Keep on Smiling :)', 'Yieeee', 'Luh happy']
+    };
+
+    const flowerImagesNew = {
+        rose: 'images/rose_new.jpg',
+        tulip: 'images/tulip_new.jpg',
+        lavender: 'images/lavender_new.jpg'
     };
 
     const randomIndex = Math.floor(Math.random() * quotes[emotion].length);
-    const randomQuote = quotes[emotion][randomIndex];
 
     document.getElementById('emotion-section').style.display = 'none';
     document.getElementById('selected-flower').src = flowerImages[selectedFlower];
-    document.getElementById('quote').textContent = randomQuote;
+    document.getElementById('quote').textContent = quotes[emotion][randomIndex];
     document.getElementById('result-section').style.display = 'block';
+
+    // Change the displayed image based on the selected flower
+    document.getElementById('selected-flower').src = flowerImagesNew[selectedFlower];
 }
