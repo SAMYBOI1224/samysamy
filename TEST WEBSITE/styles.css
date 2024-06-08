@@ -64,21 +64,20 @@ body {
 }
 
 .design-images {
+    display: none; /* Hide the cute pics by default */
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
+}
+
+#result-section .design-images {
+    display: flex; /* Show the cute pics on the third page */
     justify-content: space-between;
-    width: 100%;
+    width: 300px; /* Adjust width as needed */
 }
 
-.design-images .cute-pic {
-    width: 100px;
+#result-section .design-images .cute-pic {
+    width: 50px; /* Adjust the size of cute pics */
     height: auto;
-}
-
-.design-images .cute-pic:nth-child(1),
-.design-images .cute-pic:nth-child(2) {
-    width: 150px;
 }
