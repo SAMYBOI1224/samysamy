@@ -40,8 +40,8 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    display: block; /* Ensure the image is displayed properly */
-    margin-bottom: 10px; /* Add some spacing below the image */
+    display: block;
+    margin-bottom: 10px;
 }
 
 .flower-button p {
@@ -64,22 +64,33 @@ body {
 }
 
 .design-images {
-    display: none; /* Hide the cute pics by default */
+    display: none;
     position: absolute;
     bottom: 20px;
-    left: 50%; /* Position at 50% from the left */
+    left: 50%;
     transform: translateX(-50%);
 }
 
 #result-section .design-images {
-    display: flex; /* Show the cute pics on the third page */
-    justify-content: space-between; /* Align cute pics to the left and right */
-    width: 300px; /* Adjust width as needed */
-    position: relative; /* Set position to relative to position the cute pics relative to this container */
-    margin-top: 20px; /* Add some space between the flower image and the cute pics */
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    position: relative;
+    margin-top: 20px;
 }
 
 #result-section .design-images .cute-pic {
-    width: 50px; /* Adjust the size of cute pics */
+    width: 50px;
     height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#result-section .design-images .cute-pic:first-child {
+    left: calc(50% - 150px);
+}
+
+#result-section .design-images .cute-pic:last-child {
+    right: calc(50% - 150px);
 }
