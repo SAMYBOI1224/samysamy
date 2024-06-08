@@ -79,19 +79,19 @@ body {
 }
 
 .design-images .cute-pic:nth-child(2) {
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+}
+
+.design-images .cute-pic:nth-child(3) {
     bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.design-images .cute-pic:nth-child(3) {
-    top: 50%;
-    left: -60px;
-    transform: translateY(-50%);
-}
-
 .design-images .cute-pic:nth-child(4) {
     top: 50%;
-    right: -60px;
+    left: -60px;
     transform: translateY(-50%);
 }
