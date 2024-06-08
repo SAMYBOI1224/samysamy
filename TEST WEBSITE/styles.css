@@ -64,18 +64,14 @@ body {
 
 .design-images {
     position: absolute;
-    top: 50%; /* Vertically center the container */
-    left: 0; /* Align to the left */
-    transform: translateY(-50%); /* Adjust to vertically center */
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 
 .design-images .cute-pic {
-    width: 80px; /* Make the cute pics smaller */
+    width: 100px;
     height: auto;
-    position: relative;
-    top: 50%; /* Move the pics down by half of their height */
-    transform: translateY(-50%); /* Adjust to vertically center */
 }
