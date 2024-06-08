@@ -64,8 +64,9 @@ body {
 
 .design-images {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     width: 100%;
