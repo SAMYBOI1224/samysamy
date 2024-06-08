@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST WEB</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .cute-pics {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .cute-pics img {
+            max-width: 50px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -23,10 +43,6 @@
                 <img src="images/lavender.jpeg" alt="Lavender">
                 <p>Lavender</p>
             </div>
-        </div>
-        <div class="cute-pics">
-            <img src="cute-pic1.jpeg" alt="Cute Pic 1">
-            <img src="cute-pic4.jpeg" alt="Cute Pic 4">
         </div>
         <div id="emotion-section" style="display: none;">
             <p>How are you feeling?</p>
@@ -50,6 +66,10 @@
         <div id="result-section" style="display: none;">
             <img id="selected-flower" src="" alt="Selected Flower">
             <p id="quote"></p>
+        </div>
+        <div class="cute-pics">
+            <img src="cute-pic1.jpeg" alt="Cute Pic 1">
+            <img src="cute-pic4.jpeg" alt="Cute Pic 4">
         </div>
     </div>
     <script src="scripts.js"></script>
