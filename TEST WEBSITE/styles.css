@@ -76,12 +76,12 @@ body {
 }
 
 .design-images .cute-pic:nth-child(1) {
-    bottom: 10%;
+    top: 60%;
     right: 10%;
 }
 
 .design-images .cute-pic:nth-child(2) {
-    bottom: 10%;
+    top: 60%;
     left: 10%;
 }
 
