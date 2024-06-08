@@ -76,8 +76,8 @@ body {
 }
 
 .design-images .cute-pic:nth-child(1) {
-    bottom: 10%;
-    right: 10%;
+    top: 10%;
+    left: 10%;
 }
 
 .design-images .cute-pic:nth-child(2) {
@@ -91,6 +91,6 @@ body {
 }
 
 .design-images .cute-pic:nth-child(4) {
-    top: 10%;
-    left: 10%;
+    bottom: 10%;
+    right: 10%;
 }
