@@ -75,3 +75,17 @@ body {
     width: 100px;
     height: auto;
 }
+
+.design-images .cute-pic:nth-child(2) {
+    position: relative; /* Ensure relative positioning */
+    top: 30%; /* Adjust the y-axis position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+}
+
+.design-images .cute-pic:nth-child(3) {
+    position: relative; /* Ensure relative positioning */
+    top: 70%; /* Adjust the y-axis position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+}
