@@ -4,10 +4,6 @@ function selectFlower(flower) {
     selectedFlower = flower;
     document.querySelector('.flower-selection').style.display = 'none';
     document.getElementById('emotion-section').style.display = 'block';
-
-    // Set the src attribute of the result image based on the selected flower
-    const resultImage = document.getElementById('selected-flower');
-    resultImage.src = `images/${flower}-result.jpg`;
 }
 
 function selectEmotion(emotion) {
@@ -16,7 +12,7 @@ function selectEmotion(emotion) {
         tulip: 'images/tulip.jpeg',
         lavender: 'images/lavender.jpeg'
     };
-    
+
     const quotes = {
         angry: ['Kanino ka galit? Sasakalin natin sila!', 'Yaan mo sila, di natin sila bati.', 'Sumbong mo saken, yari yan.'],
         sad: ['Ice cream is key.', 'Wawawa ulit. AHAHAH', 'Read?'],
@@ -25,9 +21,9 @@ function selectEmotion(emotion) {
     };
 
     const flowerImagesNew = {
-        rose: 'images/rose_new.jpg',
-        tulip: 'images/tulip_new.jpg',
-        lavender: 'images/lavender_new.jpg'
+        rose: 'images/rose-result.jpg',
+        tulip: 'images/tulip-result.jpg',
+        lavender: 'images/lavender-result.jpg'
     };
 
     const randomIndex = Math.floor(Math.random() * quotes[emotion].length);
@@ -38,5 +34,5 @@ function selectEmotion(emotion) {
     document.getElementById('result-section').style.display = 'block';
 
     // Change the displayed image based on the selected flower
-    document.getElementById('selected-flower').src = flowerImagesNew[selectedFlower];
+    document.getElementById('result-image').src = flowerImagesNew[selectedFlower];
 }
