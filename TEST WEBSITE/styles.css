@@ -64,9 +64,9 @@ body {
 
 .design-images {
     position: absolute;
-    top: 10px; /* Adjust the top position */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust horizontal centering */
+    top: 50%; /* Vertically center the container */
+    left: 0; /* Align to the left */
+    transform: translateY(-50%); /* Adjust to vertically center */
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -75,4 +75,7 @@ body {
 .design-images .cute-pic {
     width: 80px; /* Make the cute pics smaller */
     height: auto;
+    position: relative;
+    top: 50%; /* Move the pics down by half of their height */
+    transform: translateY(-50%); /* Adjust to vertically center */
 }
