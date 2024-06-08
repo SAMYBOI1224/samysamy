@@ -81,17 +81,17 @@ body {
 .design-images .cute-pic:nth-child(2) {
     top: 50%;
     right: -55px;
-    transform: translateY(-50%);
+    transform: translateY(-500%);
 }
 
 .design-images .cute-pic:nth-child(3) {
-    bottom: 100%;
-    left: -50px;
-    transform: translateX(-50%);
+    top: 100%;
+    right: -50px;
+    transform: translateX(-520%);
 }
 
 .design-images .cute-pic:nth-child(4) {
-    top: 53%;
-    left: -50px;
-    transform: translateY(-50%);
+    top: 55%;
+    left: 10px;
+    transform: translateY(-500%);
 }
