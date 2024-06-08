@@ -89,3 +89,43 @@ body {
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for centering */
 }
+.design-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.design-images .cute-pic {
+    max-width: 100px;
+    height: auto;
+}
+
+.design-images .cute-pic:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.design-images .cute-pic:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.design-images .cute-pic:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.design-images .cute-pic:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
