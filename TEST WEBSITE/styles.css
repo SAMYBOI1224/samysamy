@@ -1,3 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Ensure positioning works */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative; /* Ensure positioning works */
+}
+
+.title {
+    font-size: 24px;
+    color: #ff69b4; /* pastel pink */
+}
+
+.flower-selection, #emotion-section {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flower-button, .emotion-button {
+    background-color: #fff;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    transition: transform 0.3s;
+}
+
+.flower-button img {
+    width: 200px; /* Increase the size of the flower images */
+    height: 200px;
+    border-radius: 10px;
+}
+
+.flower-button p {
+    margin: 10px 0 0 0; /* Adjust spacing for the flower names */
+}
+
+.flower-button:hover, .emotion-button:hover {
+    transform: scale(1.1);
+}
+
+#selected-flower {
+    width: 300px; /* Increase the size of the selected flower */
+    height: 300px;
+    margin: 20px auto;
+}
+
+#quote {
+    font-size: 1.2em;
+    color: #333;
+}
+
 .cute-pic {
     position: absolute;
     width: 100px; /* Adjust size as needed */
@@ -22,4 +87,9 @@
 .bottom-right {
     bottom: 0;
     right: 0;
+}
+
+/* Ensure buttons are clickable */
+button {
+    pointer-events: auto;
 }
