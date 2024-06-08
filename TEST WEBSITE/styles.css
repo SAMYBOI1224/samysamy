@@ -66,13 +66,14 @@ body {
 .design-images {
     display: none; /* Hide the cute pics by default */
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 20px;
+    left: 50%; /* Position at 50% from the left */
+    transform: translateX(-50%);
 }
 
 #result-section .design-images {
     display: flex; /* Show the cute pics on the third page */
-    justify-content: space-between;
+    justify-content: flex-start; /* Align cute pics to the left */
     width: 300px; /* Adjust width as needed */
     position: relative; /* Set position to relative to position the cute pics relative to this container */
     margin-top: 20px; /* Add some space between the flower image and the cute pics */
@@ -81,4 +82,5 @@ body {
 #result-section .design-images .cute-pic {
     width: 50px; /* Adjust the size of cute pics */
     height: auto;
+    margin-right: 30%; /* Adjust the space between cute pics */
 }
