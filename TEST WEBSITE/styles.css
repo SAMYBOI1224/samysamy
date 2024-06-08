@@ -73,7 +73,7 @@ body {
 
 #result-section .design-images {
     display: flex; /* Show the cute pics on the third page */
-    justify-content: flex-start; /* Align cute pics to the left */
+    justify-content: space-between; /* Align cute pics to the left and right */
     width: 300px; /* Adjust width as needed */
     position: relative; /* Set position to relative to position the cute pics relative to this container */
     margin-top: 20px; /* Add some space between the flower image and the cute pics */
@@ -82,5 +82,4 @@ body {
 #result-section .design-images .cute-pic {
     width: 50px; /* Adjust the size of cute pics */
     height: auto;
-    margin-right: 30%; /* Adjust the space between cute pics */
 }
