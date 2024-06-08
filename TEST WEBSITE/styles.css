@@ -10,12 +10,17 @@ body {
     margin: 0 auto;
 }
 
-h1 {
-    color: #ff6f61;
+.title {
+    font-size: 24px;
+    color: #ff69b4; /* pastel pink */
 }
 
-.flower-selection, .emotion-selection {
-    margin: 20px 0;
+.flower-selection, #emotion-section {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .flower-button, .emotion-button {
@@ -48,22 +53,12 @@ h1 {
 #selected-flower {
     width: 300px; /* Increase the size of the selected flower */
     height: 300px;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 #quote {
     font-size: 1.2em;
     color: #333;
-}
-
-@keyframes waterpaint {
-    0% { background-color: rgba(255, 255, 255, 0.0); }
-    50% { background-color: rgba(255, 255, 255, 0.7); }
-    100% { background-color: rgba(255, 255, 255, 0.0); }
-}
-
-body {
-    animation: waterpaint 3s infinite;
 }
 
 /* Ensure buttons are clickable */
