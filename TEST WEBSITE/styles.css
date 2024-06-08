@@ -80,18 +80,18 @@ body {
 
 .design-images .cute-pic:nth-child(2) {
     top: 50%;
-    right: -55px;
-    transform: translateY(-250%);
+    right: -65px;
+    transform: translateY(-200%);
 }
 
 .design-images .cute-pic:nth-child(3) {
     top: 100%;
     right: -50px;
-    transform: translateX(-50%);
+    transform: translateX(-250%);
 }
 
 .design-images .cute-pic:nth-child(4) {
     top: 55%;
     left: 10px;
-    transform: translateY(-250%);
+    transform: translateY(-220%);
 }
