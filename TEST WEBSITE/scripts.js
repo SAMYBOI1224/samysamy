@@ -14,14 +14,33 @@ function selectEmotion(emotion) {
     };
     
     const quotes = {
-        angry: 'YAAN MO SILA DI NATIN SILA BATE',
-        sad: 'Ice cream treat',
-        lonely: 'Talk to me if you want',
-        happy: 'Keep on Smiling :)'
+        angry: [
+            "kanino ka galet sasakalen naten",
+            "Yaan mo sila di natin sila bati",
+            "Sumbong mo saken yari yan"
+        ],
+        sad: [
+            "ICE CREAM IS KEY",
+            "wawaaa ulit AHAHAH",
+            "Read??"
+        ],
+        lonely: [
+            "Binge watch>>",
+            "ihh wawaa",
+            "Talk to someone??"
+        ],
+        happy: [
+            "Keep on Smilin : ) ",
+            "yieeeeee",
+            "luh happyy"
+        ]
     };
+
+    const randomIndex = Math.floor(Math.random() * quotes[emotion].length);
+    const randomQuote = quotes[emotion][randomIndex];
 
     document.getElementById('emotion-section').style.display = 'none';
     document.getElementById('selected-flower').src = flowerImages[selectedFlower];
-    document.getElementById('quote').textContent = quotes[emotion];
+    document.getElementById('quote').textContent = randomQuote;
     document.getElementById('result-section').style.display = 'block';
 }
